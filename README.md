@@ -5,6 +5,20 @@ Android图片选择器，仿微信的图片选择器的样式和效果。
 
 ![相册](https://github.com/1izheng/ImageSelector/blob/master/images/11_meitu_11.png)  ![文件夹](https://github.com/1izheng/ImageSelector/blob/master/images/22_meitu_22.png)
 
+### 方法
+
+| **方法名称** | **描述** | **参数类型** | **默认值** |
+| --- | ---| --- | --- |
+| setCrop | 是否裁剪 | boolean | false |
+| setCropCircle | 裁剪形状圆形 | boolean | false(方形） |
+| setWhRatio | 高宽比(高/宽) | float | 1.0f |
+| setMaxCount | 最大选择数量 | int | 9 |
+| setSingleMode | 是否单选模式| boolean | false |
+| setDefaultStartCamera | 是否直接拍照 | boolean | false |
+| showFirstCamera | 第一个位置是否显示相机 | boolean | true |
+| setSelected | 默认选择图片集合 | - | - |
+
+
 
 
 ### 1、引入依赖

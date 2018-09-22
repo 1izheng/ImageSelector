@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * 图片选择参数构造
  *
  * @author lizheng
- * created at 2018/9/19 下午2:46
+ *         created at 2018/9/19 下午2:46
  */
 
 public class ImageSelector {
@@ -105,15 +105,14 @@ public class ImageSelector {
     }
 
     public static class ImageSelectorBuilder {
-        private boolean isCrop = true;
-        private int mustCount = 1;
+        private boolean isCrop = false;
         private int maxCount = 9;
         private boolean defaultStartCamera = false;
         private boolean isSingleMode = false;
         private boolean showFirstCamera = true;
-        private ArrayList<String> selected;
+        private ArrayList<String> selected = new ArrayList<>();
         private boolean cropCircle = false;
-        private float whRatio;
+        private float whRatio = 1.0f;
 
 
         /**
@@ -124,17 +123,6 @@ public class ImageSelector {
          */
         public ImageSelectorBuilder setCrop(boolean crop) {
             isCrop = crop;
-            return this;
-        }
-
-        /**
-         * 必须选择的数量
-         *
-         * @param mustCount
-         * @return
-         */
-        public ImageSelectorBuilder setMustCount(int mustCount) {
-            this.mustCount = mustCount;
             return this;
         }
 
@@ -222,6 +210,12 @@ public class ImageSelector {
          */
         public void start(Activity activity, int requestCode) {
             int mode = isSingleMode ? MODE_SINGLE : MODE_MULTI;
+            //fix params
+            if (isSingleMode) {
+                maxCount = 1;
+            } else {
+                isCrop = false;
+            }
             ImageSelectorActivity.startSelect(activity, requestCode, maxCount, mode, defaultStartCamera, isCrop, cropCircle, whRatio, showFirstCamera, selected);
         }
 

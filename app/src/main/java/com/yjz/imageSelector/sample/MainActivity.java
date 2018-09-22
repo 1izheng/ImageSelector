@@ -24,10 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 ImageSelector.builder()
-                        .setCrop(true)
                         .setSingleMode(true)
-                        .setCropCircle(false)
-                        .setWhRatio(1f)
                         .start(MainActivity.this, 1);
 
 
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 ImageSelector.builder()
-                        .setMaxCount(2)
+                        .setMaxCount(9)
                         .setSingleMode(false)
                         .start(MainActivity.this, 1);
 

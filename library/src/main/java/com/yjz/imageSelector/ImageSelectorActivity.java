@@ -183,7 +183,7 @@ public class ImageSelectorActivity extends FragmentActivity implements View.OnCl
             resultList = new ArrayList<>();
         }
         if (currentMode == ImageSelector.MODE_SINGLE) {
-            //多选
+            //单选
             maxSelectCount = 1;
         }
         defaultStartCamera = getIntent().getBooleanExtra(ImageSelector.DEFAULT_START_CAMERA, false);
