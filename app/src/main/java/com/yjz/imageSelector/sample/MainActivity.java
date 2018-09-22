@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                         .setCrop(true)
                         .setSingleMode(true)
                         .setCropCircle(false)
-                        .setWhRatio(0.5f)
+                        .setWhRatio(1f)
                         .start(MainActivity.this, 1);
 
 

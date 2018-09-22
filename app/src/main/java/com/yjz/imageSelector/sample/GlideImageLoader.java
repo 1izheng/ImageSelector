@@ -14,6 +14,7 @@ import java.io.File;
  * @date created at 2018/9/21 下午5:13
  */
 public class GlideImageLoader implements ImageLoader {
+
     @Override
     public void displayImage(Context context, String path, ImageView imageView) {
 
@@ -26,6 +27,12 @@ public class GlideImageLoader implements ImageLoader {
 
     }
 
+    /**
+     * 显示预览大图
+     * @param context
+     * @param path
+     * @param imageView
+     */
     @Override
     public void displayPreviewImage(Context context, String path, ImageView imageView) {
         Glide.with(context).load(new File(path))

@@ -14,6 +14,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //设置图片加载框架
         ImageSelector.getInstance().setImageLoader(new GlideImageLoader());
     }
 }

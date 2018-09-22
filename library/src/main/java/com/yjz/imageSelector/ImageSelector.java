@@ -10,8 +10,9 @@ import java.util.ArrayList;
  * 图片选择参数构造
  *
  * @author lizheng
- * @date created at 2018/9/19 下午2:46
+ * created at 2018/9/19 下午2:46
  */
+
 public class ImageSelector {
 
     private static ImageLoader imageLoader;
