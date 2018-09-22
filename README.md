@@ -3,7 +3,7 @@ Android图片选择器，仿微信的图片选择器的样式和效果。
 支持图片单选、多选、裁剪形状自定义、裁剪比例设置、解耦图片加载框架。
 
 
-![相册](https://github.com/1izheng/ImageSelector/blob/master/images/11_meitu_11.png)  ![文件夹](https://github.com/1izheng/ImageSelector/blob/master/images/22_meitu_22.png)  ![预览](https://github.com/1izheng/ImageSelector/blob/master/images/33_meitu_33.png)
+![相册](https://github.com/1izheng/ImageSelector/blob/master/images/11_meitu_11.png)  ![文件夹](https://github.com/1izheng/ImageSelector/blob/master/images/22_meitu_22.png)
 
 
 
