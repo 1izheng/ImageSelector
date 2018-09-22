@@ -7,7 +7,7 @@ Android图片选择器，仿微信的图片选择器的样式和效果。
 
 
 
-###1、引入依赖
+### 1、引入依赖
 
 build.gradle在添加以下代码
 
@@ -16,7 +16,7 @@ compile 'com.yjz:ImageSelector:1.0.1'
 
 ```
 
-###2、配置AndroidManifest.xml
+### 2、配置AndroidManifest.xml
 
 ```
 //储存卡的读写权限
@@ -26,7 +26,7 @@ compile 'com.yjz:ImageSelector:1.0.1'
 <uses-permission android:name="android.permission.CAMERA" />
 ```
 
-###3、使用
+### 3、使用
 * 初始化图片加载库
 
 ```
@@ -81,7 +81,7 @@ public class GlideImageLoader implements ImageLoader {
 * 调用
 
 ```
-			ImageSelector.builder()
+	ImageSelector.builder()
                         .setCrop(true) //是否裁剪 默认false
                         .setSingleMode(true) //是否单选
                         .setCropCircle(false) //是否裁剪圆形  默认true:矩形
@@ -97,7 +97,7 @@ public class GlideImageLoader implements ImageLoader {
 * 接收选择结果
 
 ```
-	@Override
+@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
