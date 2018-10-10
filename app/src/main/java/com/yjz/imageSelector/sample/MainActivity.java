@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 ImageSelector.builder()
+                        .setCrop(true)
                         .setSingleMode(true)
                         .start(MainActivity.this, 1);
 
