@@ -24,7 +24,7 @@ import java.util.List;
 
 public class FolderAdapter extends BaseAdapter {
 
-    private static int lastSelected = 0;
+    private int lastSelected = 0;
     private Context mContext;
     private LayoutInflater mInflater;
     private List<Folder> mFolders;

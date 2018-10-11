@@ -507,11 +507,11 @@ public class ImageSelectorActivity extends FragmentActivity implements View.OnCl
     public void onImagesLoaded(ArrayList<Folder> imageFolders, ArrayList<Image> images) {
         this.mResultFolder = imageFolders;
 
+        mImageRecyAdapter.setData(images);
         // 设定默认选择
         if (resultList != null && resultList.size() > 0) {
             mImageRecyAdapter.setDefaultSelected(resultList);
         }
-        mImageRecyAdapter.setData(images);
         mFolderAdapter.setData(mResultFolder);
     }
 

@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.yjz.imageSelector.ImageSelector;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 ImageSelector.builder()
                         .setMaxCount(9)
                         .setSingleMode(false)
+                        .setSelected(selected)
                         .start(MainActivity.this, 1);
 
 
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private ArrayList<String> selected=new ArrayList<>();
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -55,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (resultCode == RESULT_OK) {
             if (data != null && requestCode == 1) {
-                final List<String> images = data.getStringArrayListExtra(ImageSelector.EXTRA_RESULT);
-                final String path = images.get(0);
+                selected = data.getStringArrayListExtra(ImageSelector.EXTRA_RESULT);
+                final String path = selected.get(0);
                 Log.d("##########--->", "-----------------" + path);
-                Toast.makeText(this, "path:" + images.size(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "path:" + selected.size(), Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "没有数据", Toast.LENGTH_SHORT).show();
             }
