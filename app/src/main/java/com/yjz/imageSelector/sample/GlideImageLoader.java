@@ -5,7 +5,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.yjz.imageSelector.utils.ImageLoader;
+import com.yjz.imageSelector.utils.ImageSelectorLoader;
 
 import java.io.File;
 
@@ -13,7 +13,7 @@ import java.io.File;
  * @author lizheng
  * @date created at 2018/9/21 下午5:13
  */
-public class GlideImageLoader implements ImageLoader {
+public class GlideImageLoader implements ImageSelectorLoader {
 
     @Override
     public void displayImage(Context context, String path, ImageView imageView) {

@@ -9,7 +9,7 @@ import android.widget.ImageView;
  * created at 2018/9/21 下午5:32
  */
 
-public interface ImageLoader {
+public interface ImageSelectorLoader {
 
     void displayImage(Context context, String path, ImageView imageView);
 

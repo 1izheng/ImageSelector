@@ -2,7 +2,7 @@ package com.yjz.imageSelector;
 
 import android.app.Activity;
 
-import com.yjz.imageSelector.utils.ImageLoader;
+import com.yjz.imageSelector.utils.ImageSelectorLoader;
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class ImageSelector {
 
-    private static ImageLoader imageLoader;
+    private static ImageSelectorLoader imageLoader;
     private static volatile ImageSelector sInstance;
 
     private ImageSelector() {
@@ -36,13 +36,13 @@ public class ImageSelector {
     /**
      * 提供全局替换图片加载框架的接口，若切换其它框架，可以实现一键全局替换
      */
-    public void setImageLoader(ImageLoader loader) {
+    public void setImageLoader(ImageSelectorLoader loader) {
         if (loader != null) {
             imageLoader = loader;
         }
     }
 
-    public ImageLoader getImageLoader() {
+    public ImageSelectorLoader getImageLoader() {
         return imageLoader;
     }
 
