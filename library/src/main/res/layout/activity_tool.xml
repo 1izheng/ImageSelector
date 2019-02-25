@@ -14,7 +14,7 @@
         android:layout_height="48dp"
         android:layout_centerVertical="true"
         android:background="@null"
-        android:drawableLeft="@drawable/ic_arrow_back"
+        android:drawableLeft="@drawable/ic_image_select_back"
         android:drawablePadding="5dp"
         android:paddingLeft="10dp"
         android:text="返回"
@@ -36,7 +36,7 @@
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         android:text="完成"
-        android:textColor="@color/default_text_color"
+        android:textColor="#CDCECE"
         android:textSize="16dp"
         />
 
@@ -49,6 +49,6 @@
         android:layout_centerVertical="true"
         android:padding="12dp"
         android:visibility="gone"
-        app:srcCompat="@drawable/ic_vector_delete"
+        android:src="@drawable/ic_image_select_delete"
         />
 </RelativeLayout>

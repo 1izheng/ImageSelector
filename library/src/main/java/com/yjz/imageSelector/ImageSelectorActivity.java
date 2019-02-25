@@ -20,6 +20,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yjz.imageSelector.adapter.FolderAdapter;
@@ -92,11 +93,11 @@ public class ImageSelectorActivity extends FragmentActivity implements View.OnCl
     /**
      * 文件夹名称
      */
-    private Button btnFolderName;
+    private TextView btnFolderName;
     /**
      * 预览按钮
      */
-    private Button btnPreview;
+    private TextView btnPreview;
     // 底部View
     private View mPopupAnchorView;
     // 确定
